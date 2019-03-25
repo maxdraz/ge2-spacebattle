@@ -16,6 +16,8 @@ public class Boid : MonoBehaviour
 
     public List<SteeringBehaviour> behaviours;
 
+   // public int currentWaypoint = 0;
+
     private void Start()
     {
         SteeringBehaviour[] bs = GetComponents<SteeringBehaviour>();
@@ -78,5 +80,5 @@ public class Boid : MonoBehaviour
         desired.Normalize();
         desired *= maxSpeed;
         return desired - velocity;
-    }
+    }   
 }

@@ -14,14 +14,14 @@ namespace Vector
             return d;
         }
 
-        public static float GetDotProduct(Vector3 me, Vector3 target)
-        {
-            float meMag;
-            float targetMag;
-            float dot;
+        //public static float GetDotProduct(Vector3 me, Vector3 target)
+        //{
+        //    float meMag;
+        //    float targetMag;
+        //    float dot;
 
-            return dot;
-        }
+        //    return dot;
+        //}
     }
 
 }

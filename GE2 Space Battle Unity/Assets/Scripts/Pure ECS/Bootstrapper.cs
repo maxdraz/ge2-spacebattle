@@ -15,6 +15,7 @@ public class Bootstrapper : MonoBehaviour
     private EntityManager manager;
 
     [Header("Entities")]
+    public Transform targetTrans;
     public List<EntityToSpawn> entitiesToSpawn;
 
     //public int entityCount;
@@ -55,10 +56,12 @@ public class Bootstrapper : MonoBehaviour
             float3 pos = new float3(ranX, 0, ranZ);
             manager.SetComponentData(entities[i], new Position { Value = pos });
             
-            quaternion rot = new quaternion(-1,0,0,1);
-            
+            quaternion rot = new quaternion(-1,0,0,1);            
             
             manager.SetComponentData(entities[i], new Rotation {Value = rot});
+           // manager.SetComponentData(entities[i], new BoidECS { target = targetTrans.position });
+            manager.SetComponentData(entities[i], new SeekECS { target = targetTrans.position });
+
         }
 
         Debug.Log(entities.Length);

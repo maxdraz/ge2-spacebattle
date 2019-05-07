@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 2450909740925073892}
   - component: {fileID: 7715580582625182632}
   - component: {fileID: 7181936827339301626}
+  - component: {fileID: 4941952192705213371}
+  - component: {fileID: 4691146615531192834}
   m_Layer: 0
   m_Name: CylonTemplate
   m_TagString: Untagged
@@ -101,3 +103,39 @@ MonoBehaviour:
     layer: 0
     castShadows: 0
     receiveShadows: 0
+--- !u!114 &4941952192705213371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1474602352643487367}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a672eddfe2a5ee445b19f63e9079d708, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SerializedData:
+    mass: 1
+    target: {x: 0, y: 0, z: 0}
+    force: {x: 0, y: 0, z: 0}
+    acceleration: {x: 0, y: 0, z: 0}
+    velocity: {x: 0, y: 0, z: 0}
+    maxSpeed: 5
+    maxForce: 100
+--- !u!114 &4691146615531192834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1474602352643487367}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ce7b855f561bb340adacb2002f5f973, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SerializedData:
+    target: {x: 0, y: 0, z: 0}
+    force: {x: 0, y: 0, z: 0}
+    weight: 5
